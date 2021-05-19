@@ -1,0 +1,98 @@
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <title>主题教程</title>
+  <link rel="stylesheet" href="http://127.0.0.1:8000/public/source/css/style.mini.css" type="text/css" />
+  
+  <link rel="stylesheet" href="http://127.0.0.1:8000/public/source/css/style.css" type="text/css" />
+ 
+</head>
+
+<body>
+<div class="post_info">
+<h1 class="title">主题教程</h1>
+<span class="info">分类:lnzublog 作者:爱吃竹子的小熊熊</span>
+<span>创建:</span><span name="create_time">1621001222000</span>
+<span>更新:</span><span name="update_time">1621148107000</span>
+
+</div>
+
+<div class="contents">
+<h1>hexo-theme-lnzu</h1>
+<p>这是一个简约的hexo主题，慢慢完善吧，能力有限哈哈，目前还需要有更多修复完善的地方。</p>
+<h4><a href="https://github.com/lnzu/hexo-theme-lnzu">主题项目地址</a></h4>
+<h4><a href="https://lnzu.github.io">预览地址</a></h4>
+<h3>配置安装主题</h3>
+<h4>1.安装</h4>
+<pre><code class="lang-yaml">git clone https://github.com/lnzu/hexo-theme-lnzu themes/lnzu
+</code></pre>
+<h4>2.hexo站点配置文件下修改<strong>_config.yml</strong></h4>
+<pre><code class="lang-yaml">theme: lnzu
+</code></pre>
+<h4>3.主题使用了<strong>hexo-prism-plugin</strong>插件高亮代码</h4>
+<p>安装插件</p>
+<pre><code class="lang-bash">npm i -S hexo-prism-plugin
+</code></pre>
+<p>在hexo根目录下的<strong>_config.yml</strong>下修改</p>
+<pre><code class="lang-yaml">highlight:
+  enable: false
+  line_number: false
+  auto_detect: 
+  tab_replace: &#39;&#39;
+  wrap: true
+  hljs: false
+
+prism_plugin:
+  mode: &#39;preprocess&#39;    # realtime/preprocess
+  theme: &#39;default&#39;
+  line_number: ture    # default false
+  custom_css: &#39;path/to/your/custom.css&#39; #此项不要修改
+</code></pre>
+<h4>4.标签云页</h4>
+<p>新建一个页面</p>
+<pre><code class="lang-bash">hexo new page tags
+</code></pre>
+<p>打开hexo目录下<strong>source/tags/index.md</strong>修改如下</p>
+<pre><code class="lang-yaml">---
+title: tags
+date: 2020-05-21 11:44:15
+type: tags
+---
+</code></pre>
+<h4>5.分类页</h4>
+<p>新建一个页面</p>
+<pre><code class="lang-bash">hexo new page categories
+</code></pre>
+<p>打开hexo目录下<strong>source/categories/index.md</strong>修改如下</p>
+<pre><code class="lang-yaml">---
+title: categories
+date: 2020-05-21 12:18:13
+type: categories
+---
+</code></pre>
+<h4>6.搜索页</h4>
+<p>新建一个页面</p>
+<pre><code class="lang-bash">hexo new page search
+</code></pre>
+<p>打开hexo目录下<strong>source/search/index.md</strong>修改如下</p>
+<pre><code class="lang-yaml">---
+title: search
+date: 2020-05-21 10:52:16
+type: search
+---
+</code></pre>
+<h4>7.主题下的_config.yml配置选项</h4>
+<pre><code class="lang-yaml">#主题风格样式 light dark
+colorscheme: light
+
+menu:
+  home: /
+  about: /about/
+  search: /search
+  tags: /tags
+  categories: /categories
+</code></pre>
+
+</div>
+
+</body>

@@ -1,0 +1,11 @@
+site:
+  title: "大鼻子的小哥哥"
+  description: "我们曾是守望者，现在我们要做远行者......"
+  mail: "2464869577@qq.com"
+  domain: "http://127.0.0.1:8000/public"
+  # domain: "https://lnzublog-0gcrt6j489543802-1251549801.tcloudbaseapp.com/public"
+  author: "林竹"
+  default_categery: "默认"
+   
+themes: "default"
+

@@ -1,0 +1,141 @@
+html {
+  background-color: white;
+}
+
+body {
+  -webkit-text-size-adjust:none;
+  background-color: white;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,strong,em,sub,sup,blockquote,
+footer,header,article,section,del,code
+p>a,p>strong,p>em,
+blockquote>p>a,blockquote>p>em,blockquote>p>strong,
+pre,pre>code,code,span,
+li,ul>li,ol>li,li>p,u
+{
+  font-family: Menlo;
+  margin: 5px 0 5px 0;
+  text-align:justify;
+  text-justify:inter-ideograph;
+  word-break: break-all;
+  line-height: 2em;
+  color: #262626;
+  
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: bold;
+}
+h1{font-size: 22px}
+h2{font-size: 18px }
+h3,h4,h5,h6{font-size: 15px }
+
+
+html,body,p,div,a,div,strong,em,sub,sup,blockquote,
+footer,header,article,section,del,code,
+p>a,p>strong,p>em,
+blockquote>p>a,blockquote>p>em,blockquote>p>strong,
+pre,pre>code,code,
+li,ul>li,ol>li
+{
+  font-size:15px;
+  font-weight: normal;
+}
+
+a,p>a,blockquote>p>a,blockquote>a,ol>li>a,ul>li>a
+p>strong>a,p>em>a
+{
+  color: #00A0FF;
+  text-decoration: none;
+}
+
+blockquote {
+  background-color: #fafafa;
+  padding: 0.2px 6.5px 0.2px 6.5px;
+  border-left: 10px solid #eeeeee;
+  word-break: break-all;
+}
+
+pre {
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius:10px;
+  overflow: auto; 
+  overflow-y:hidden;
+  -webkit-overflow-scrolling:touch;
+  position: relative;
+  margin-right: 15px;
+  background: #f6f8fa;
+  
+}
+
+code,p>code,ul>code,ol>code{
+  background: rgba(0,0,0,0.05);
+  padding: .5px 4px;
+  border-radius: 5px;
+}
+
+pre>code {
+  background: transparent;
+}
+
+ul {
+  padding-left: 25px;
+  margin: 0;
+}
+
+ol {
+  padding-left: 40px;
+  margin: 0;
+}
+
+strong,p>strong,blockquote>strong{
+  color: #A28EFA;
+  font-weight: bold;
+  margin: 0 2px 0 2px;
+}
+
+del {
+  text-decoration-color: #FF545A;
+}
+
+u,p>u{
+  text-decoration: underline;
+  text-decoration-color: #262626;
+}
+
+u:before{
+  content: ' ';
+}
+
+u:after{
+  content: ' ';
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: rgba(0,0,0,0.2);
+}
+
+
+/*代码框的复制按钮*/
+.pre_copy {
+  color: #555555;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  background-color: rgba(0,0,0,0.05);
+  border: none;
+  height: 25px;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  font-size: 10px;
+  transition: opacity 0.3s ease-in-out;
+  padding: 0;
+}

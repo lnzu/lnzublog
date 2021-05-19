@@ -1,0 +1,24 @@
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="{{ url_for }}source/css/style.mini.css" type="text/css" />
+  
+  <link rel="stylesheet" href="{{ url_for }}source/css/style.css" type="text/css" />
+ 
+</head>
+
+<body>
+<div class="post_info">
+<h1 class="title">{{ title  }}</h1>
+<span class="info">分类:{{ categery }} 作者:{{ author }}</span>
+<span>创建:</span><span name="create_time">{{ create_time}}</span>
+<span>更新:</span><span name="update_time">{{update_time}}</span>
+
+</div>
+
+<div class="contents">
+{{ content }}
+</div>
+
+</body>

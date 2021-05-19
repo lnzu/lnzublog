@@ -1,0 +1,6 @@
+menu:
+  home: "home"
+  search: "search"
+  about: "about"
+  
+theme: dark
